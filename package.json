@@ -1,0 +1,15 @@
+{
+  "name": "adpages-jotform-hidden-field-attribution-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Manual Jotform hidden-field attribution kit for UTM and click-id QA.",
+  "scripts": {
+    "check": "node --check src/lead-attribution.mjs && node --check snippets/utm-hidden-fields.js && node --check scripts/check.mjs && node --check scripts/smoke.mjs && node scripts/check.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

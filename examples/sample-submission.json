@@ -1,0 +1,149 @@
+{
+  "submissionId": "6019347710012345678",
+  "form": {
+    "id": "241234567890123",
+    "title": "Local SEO Audit Request",
+    "url": "https://form.jotform.com/241234567890123"
+  },
+  "createdAt": "2026-05-24T10:30:00.000Z",
+  "ip": "203.0.113.24",
+  "source": {
+    "embedPage": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+    "referrer": "https://www.google.com/",
+    "userAgent": "Mozilla/5.0 attribution smoke test"
+  },
+  "answers": {
+    "1": {
+      "name": "fullName",
+      "text": "Full Name",
+      "type": "control_fullname",
+      "answer": {
+        "first": "Sam",
+        "last": "Taylor"
+      }
+    },
+    "2": {
+      "name": "email",
+      "text": "Email",
+      "type": "control_email",
+      "answer": "sam.taylor@example.com"
+    },
+    "3": {
+      "name": "phone",
+      "text": "Phone",
+      "type": "control_phone",
+      "answer": "+61 8 5550 0100"
+    },
+    "10": {
+      "name": "utm_source",
+      "text": "UTM Source",
+      "type": "control_hidden",
+      "answer": "google"
+    },
+    "11": {
+      "name": "utm_medium",
+      "text": "UTM Medium",
+      "type": "control_hidden",
+      "answer": "cpc"
+    },
+    "12": {
+      "name": "utm_campaign",
+      "text": "UTM Campaign",
+      "type": "control_hidden",
+      "answer": "local-seo-audit"
+    },
+    "13": {
+      "name": "utm_term",
+      "text": "UTM Term",
+      "type": "control_hidden",
+      "answer": "near-me-checker"
+    },
+    "14": {
+      "name": "utm_content",
+      "text": "UTM Content",
+      "type": "control_hidden",
+      "answer": "hero-form"
+    },
+    "15": {
+      "name": "landing_page_url",
+      "text": "Landing Page URL",
+      "type": "control_hidden",
+      "answer": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789"
+    },
+    "16": {
+      "name": "referrer_url",
+      "text": "Referrer URL",
+      "type": "control_hidden",
+      "answer": "https://www.google.com/"
+    },
+    "17": {
+      "name": "gclid",
+      "text": "Google Click ID",
+      "type": "control_hidden",
+      "answer": "test-gclid-123"
+    },
+    "18": {
+      "name": "msclkid",
+      "text": "Microsoft Click ID",
+      "type": "control_hidden",
+      "answer": "test-msclkid-456"
+    },
+    "19": {
+      "name": "fbclid",
+      "text": "Meta Click ID",
+      "type": "control_hidden",
+      "answer": "test-fbclid-789"
+    },
+    "20": {
+      "name": "first_touch_summary",
+      "text": "First Touch Summary",
+      "type": "control_hidden",
+      "answer": "google / cpc / local-seo-audit"
+    },
+    "21": {
+      "name": "first_touch_url",
+      "text": "First Touch URL",
+      "type": "control_hidden",
+      "answer": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit"
+    },
+    "22": {
+      "name": "last_touch_summary",
+      "text": "Last Touch Summary",
+      "type": "control_hidden",
+      "answer": "google / cpc / local-seo-audit"
+    },
+    "23": {
+      "name": "last_touch_url",
+      "text": "Last Touch URL",
+      "type": "control_hidden",
+      "answer": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789"
+    },
+    "24": {
+      "name": "marketing_consent",
+      "text": "I agree to be contacted about my audit request.",
+      "type": "control_checkbox",
+      "answer": "Yes"
+    },
+    "25": {
+      "name": "consent_status",
+      "text": "Consent Status",
+      "type": "control_hidden",
+      "answer": "granted"
+    },
+    "26": {
+      "name": "consent_source",
+      "text": "Consent Source",
+      "type": "control_hidden",
+      "answer": "Jotform checkbox: I agree to be contacted about my audit request."
+    }
+  },
+  "rawRequest": {
+    "q15_landing_page_url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "local-seo-audit",
+    "gclid": "test-gclid-123",
+    "msclkid": "test-msclkid-456",
+    "fbclid": "test-fbclid-789"
+  }
+}

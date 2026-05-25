@@ -1,0 +1,253 @@
+{
+  "kit": "adpages-jotform-hidden-field-attribution-kit",
+  "kitVersion": "0.1.0",
+  "platform": "jotform",
+  "manualSetupOnly": true,
+  "requiresJotformApi": false,
+  "requiresOAuth": false,
+  "requiresWebhooks": false,
+  "requiresSecrets": false,
+  "writesDataAutomatically": false,
+  "fields": [
+    {
+      "sourceKey": "form_title",
+      "jotformQuestionName": "form_title",
+      "jotformQuestionLabel": "Form title",
+      "outputKey": "form_title",
+      "type": "context",
+      "sourcePath": "derived.form_title",
+      "required": true,
+      "purpose": "Identify which Jotform lead form produced the submission."
+    },
+    {
+      "sourceKey": "submission_id",
+      "jotformQuestionName": "submission_id",
+      "jotformQuestionLabel": "Submission ID",
+      "outputKey": "submission_id",
+      "type": "context",
+      "sourcePath": "derived.submission_id",
+      "required": true,
+      "purpose": "Keep a deterministic local reference for QA and dedupe checks."
+    },
+    {
+      "sourceKey": "lead_name",
+      "jotformQuestionName": "lead_name",
+      "jotformQuestionLabel": "Lead name",
+      "outputKey": "lead_name",
+      "type": "identity",
+      "sourcePath": "derived.lead_name",
+      "required": true,
+      "purpose": "Human-readable lead identity for report review."
+    },
+    {
+      "sourceKey": "email",
+      "jotformQuestionName": "email",
+      "jotformQuestionLabel": "Email",
+      "outputKey": "email",
+      "type": "identity",
+      "sourcePath": "derived.email",
+      "required": true,
+      "purpose": "Primary contact path from the form submission."
+    },
+    {
+      "sourceKey": "phone",
+      "jotformQuestionName": "phone",
+      "jotformQuestionLabel": "Phone",
+      "outputKey": "phone",
+      "type": "identity",
+      "sourcePath": "derived.phone",
+      "required": false,
+      "purpose": "Optional call-back contact path from the form submission."
+    },
+    {
+      "sourceKey": "utm_source",
+      "jotformQuestionName": "utm_source",
+      "jotformQuestionLabel": "UTM Source",
+      "outputKey": "utm_source",
+      "type": "utm",
+      "sourcePath": "derived.utm_source",
+      "required": true,
+      "purpose": "Campaign source captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_medium",
+      "jotformQuestionName": "utm_medium",
+      "jotformQuestionLabel": "UTM Medium",
+      "outputKey": "utm_medium",
+      "type": "utm",
+      "sourcePath": "derived.utm_medium",
+      "required": true,
+      "purpose": "Campaign medium captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_campaign",
+      "jotformQuestionName": "utm_campaign",
+      "jotformQuestionLabel": "UTM Campaign",
+      "outputKey": "utm_campaign",
+      "type": "utm",
+      "sourcePath": "derived.utm_campaign",
+      "required": true,
+      "purpose": "Campaign name captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_term",
+      "jotformQuestionName": "utm_term",
+      "jotformQuestionLabel": "UTM Term",
+      "outputKey": "utm_term",
+      "type": "utm",
+      "sourcePath": "derived.utm_term",
+      "required": false,
+      "purpose": "Paid-search term or audience hint captured in a hidden field."
+    },
+    {
+      "sourceKey": "utm_content",
+      "jotformQuestionName": "utm_content",
+      "jotformQuestionLabel": "UTM Content",
+      "outputKey": "utm_content",
+      "type": "utm",
+      "sourcePath": "derived.utm_content",
+      "required": false,
+      "purpose": "Creative, placement, or variant hint captured in a hidden field."
+    },
+    {
+      "sourceKey": "landing_page_url",
+      "jotformQuestionName": "landing_page_url",
+      "jotformQuestionLabel": "Landing Page URL",
+      "outputKey": "landing_page_url",
+      "type": "page",
+      "sourcePath": "derived.landing_page_url",
+      "required": true,
+      "purpose": "Full page URL that hosted or linked to the Jotform form."
+    },
+    {
+      "sourceKey": "referrer_url",
+      "jotformQuestionName": "referrer_url",
+      "jotformQuestionLabel": "Referrer URL",
+      "outputKey": "referrer_url",
+      "type": "page",
+      "sourcePath": "derived.referrer_url",
+      "required": false,
+      "purpose": "Browser referrer captured before submission."
+    },
+    {
+      "sourceKey": "gclid",
+      "jotformQuestionName": "gclid",
+      "jotformQuestionLabel": "Google Click ID",
+      "outputKey": "gclid",
+      "type": "click_id",
+      "sourcePath": "derived.gclid",
+      "required": false,
+      "purpose": "Google Ads click ID used for downstream matching."
+    },
+    {
+      "sourceKey": "msclkid",
+      "jotformQuestionName": "msclkid",
+      "jotformQuestionLabel": "Microsoft Click ID",
+      "outputKey": "msclkid",
+      "type": "click_id",
+      "sourcePath": "derived.msclkid",
+      "required": false,
+      "purpose": "Microsoft Ads click ID used for downstream matching."
+    },
+    {
+      "sourceKey": "fbclid",
+      "jotformQuestionName": "fbclid",
+      "jotformQuestionLabel": "Meta Click ID",
+      "outputKey": "fbclid",
+      "type": "click_id",
+      "sourcePath": "derived.fbclid",
+      "required": false,
+      "purpose": "Meta click ID retained for source QA."
+    },
+    {
+      "sourceKey": "first_touch_summary",
+      "jotformQuestionName": "first_touch_summary",
+      "jotformQuestionLabel": "First Touch Summary",
+      "outputKey": "first_touch_summary",
+      "type": "touch",
+      "sourcePath": "derived.first_touch_summary",
+      "required": false,
+      "purpose": "Original known source before later visits or form submits."
+    },
+    {
+      "sourceKey": "first_touch_url",
+      "jotformQuestionName": "first_touch_url",
+      "jotformQuestionLabel": "First Touch URL",
+      "outputKey": "first_touch_url",
+      "type": "touch",
+      "sourcePath": "derived.first_touch_url",
+      "required": false,
+      "purpose": "First known landing URL retained by the snippet or export."
+    },
+    {
+      "sourceKey": "last_touch_summary",
+      "jotformQuestionName": "last_touch_summary",
+      "jotformQuestionLabel": "Last Touch Summary",
+      "outputKey": "last_touch_summary",
+      "type": "touch",
+      "sourcePath": "derived.last_touch_summary",
+      "required": false,
+      "purpose": "Latest known source at the time of submission."
+    },
+    {
+      "sourceKey": "last_touch_url",
+      "jotformQuestionName": "last_touch_url",
+      "jotformQuestionLabel": "Last Touch URL",
+      "outputKey": "last_touch_url",
+      "type": "touch",
+      "sourcePath": "derived.last_touch_url",
+      "required": false,
+      "purpose": "Latest known page URL at the time of submission."
+    },
+    {
+      "sourceKey": "consent_status",
+      "jotformQuestionName": "consent_status",
+      "jotformQuestionLabel": "Consent Status",
+      "outputKey": "consent_status",
+      "type": "consent",
+      "sourcePath": "derived.consent_status",
+      "required": true,
+      "purpose": "Consent or privacy acknowledgement status copied into the QA output."
+    },
+    {
+      "sourceKey": "consent_source",
+      "jotformQuestionName": "consent_source",
+      "jotformQuestionLabel": "Consent Source",
+      "outputKey": "consent_source",
+      "type": "consent",
+      "sourcePath": "derived.consent_source",
+      "required": false,
+      "purpose": "Where the consent status came from, such as checkbox text or form note."
+    },
+    {
+      "sourceKey": "source_context",
+      "jotformQuestionName": "source_context",
+      "jotformQuestionLabel": "Source Context",
+      "outputKey": "source_context",
+      "type": "context",
+      "sourcePath": "derived.source_context",
+      "required": true,
+      "purpose": "Plain-English context for the source, page, and form."
+    },
+    {
+      "sourceKey": "human_summary",
+      "jotformQuestionName": "human_summary",
+      "jotformQuestionLabel": "Human Summary",
+      "outputKey": "human_summary",
+      "type": "review",
+      "sourcePath": "derived.human_summary",
+      "required": true,
+      "purpose": "Readable attribution summary for agency/client QA."
+    },
+    {
+      "sourceKey": "qa_status",
+      "jotformQuestionName": "qa_status",
+      "jotformQuestionLabel": "QA Status",
+      "outputKey": "qa_status",
+      "type": "review",
+      "sourcePath": "derived.qa_status",
+      "required": true,
+      "purpose": "Local readiness status before relying on the form attribution path."
+    }
+  ]
+}
