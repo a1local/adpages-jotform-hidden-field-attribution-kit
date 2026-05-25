@@ -1,0 +1,358 @@
+{
+  "kit": "adpages-jotform-hidden-field-attribution-kit",
+  "version": "0.1.0",
+  "platform": "jotform",
+  "manualUseOnly": true,
+  "disclaimer": "Local normalization preview only. This kit does not call Jotform APIs, create webhooks, or write form data.",
+  "form": {
+    "id": "241234567890123",
+    "title": "Local SEO Audit Request",
+    "url": "https://form.jotform.com/241234567890123"
+  },
+  "submission": {
+    "id": "6019347710012345678",
+    "createdAt": "2026-05-24T10:30:00.000Z",
+    "ip": "203.0.113.24"
+  },
+  "contact": {
+    "name": "Sam Taylor",
+    "email": "sam.taylor@example.com",
+    "phone": "+61 8 5550 0100"
+  },
+  "attribution": {
+    "utm": {
+      "source": "google",
+      "medium": "cpc",
+      "campaign": "local-seo-audit",
+      "term": "near-me-checker",
+      "content": "hero-form"
+    },
+    "clickIds": {
+      "gclid": "test-gclid-123",
+      "msclkid": "test-msclkid-456",
+      "fbclid": "test-fbclid-789"
+    },
+    "landingPageUrl": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+    "referrerUrl": "https://www.google.com/",
+    "firstTouch": {
+      "summary": "google / cpc / local-seo-audit",
+      "url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit"
+    },
+    "lastTouch": {
+      "summary": "google / cpc / local-seo-audit",
+      "url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789"
+    },
+    "consent": {
+      "status": "granted",
+      "source": "Jotform checkbox: I agree to be contacted about my audit request."
+    },
+    "sourceContext": "Jotform \"Local SEO Audit Request\" (241234567890123) submitted from exampleagency.test with google / cpc / local-seo-audit",
+    "humanSummary": "Sam Taylor submitted Local SEO Audit Request via google / cpc / local-seo-audit; gclid, msclkid, fbclid; consent granted."
+  },
+  "mappedFields": [
+    {
+      "sourceKey": "form_title",
+      "jotformQuestionName": "form_title",
+      "jotformQuestionLabel": "Form title",
+      "outputKey": "form_title",
+      "type": "context",
+      "value": "Local SEO Audit Request",
+      "required": true,
+      "purpose": "Identify which Jotform lead form produced the submission."
+    },
+    {
+      "sourceKey": "submission_id",
+      "jotformQuestionName": "submission_id",
+      "jotformQuestionLabel": "Submission ID",
+      "outputKey": "submission_id",
+      "type": "context",
+      "value": "6019347710012345678",
+      "required": true,
+      "purpose": "Keep a deterministic local reference for QA and dedupe checks."
+    },
+    {
+      "sourceKey": "lead_name",
+      "jotformQuestionName": "lead_name",
+      "jotformQuestionLabel": "Lead name",
+      "outputKey": "lead_name",
+      "type": "identity",
+      "value": "Sam Taylor",
+      "required": true,
+      "purpose": "Human-readable lead identity for report review."
+    },
+    {
+      "sourceKey": "email",
+      "jotformQuestionName": "email",
+      "jotformQuestionLabel": "Email",
+      "outputKey": "email",
+      "type": "identity",
+      "value": "sam.taylor@example.com",
+      "required": true,
+      "purpose": "Primary contact path from the form submission."
+    },
+    {
+      "sourceKey": "phone",
+      "jotformQuestionName": "phone",
+      "jotformQuestionLabel": "Phone",
+      "outputKey": "phone",
+      "type": "identity",
+      "value": "+61 8 5550 0100",
+      "required": false,
+      "purpose": "Optional call-back contact path from the form submission."
+    },
+    {
+      "sourceKey": "utm_source",
+      "jotformQuestionName": "utm_source",
+      "jotformQuestionLabel": "UTM Source",
+      "outputKey": "utm_source",
+      "type": "utm",
+      "value": "google",
+      "required": true,
+      "purpose": "Campaign source captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_medium",
+      "jotformQuestionName": "utm_medium",
+      "jotformQuestionLabel": "UTM Medium",
+      "outputKey": "utm_medium",
+      "type": "utm",
+      "value": "cpc",
+      "required": true,
+      "purpose": "Campaign medium captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_campaign",
+      "jotformQuestionName": "utm_campaign",
+      "jotformQuestionLabel": "UTM Campaign",
+      "outputKey": "utm_campaign",
+      "type": "utm",
+      "value": "local-seo-audit",
+      "required": true,
+      "purpose": "Campaign name captured in a Jotform hidden field."
+    },
+    {
+      "sourceKey": "utm_term",
+      "jotformQuestionName": "utm_term",
+      "jotformQuestionLabel": "UTM Term",
+      "outputKey": "utm_term",
+      "type": "utm",
+      "value": "near-me-checker",
+      "required": false,
+      "purpose": "Paid-search term or audience hint captured in a hidden field."
+    },
+    {
+      "sourceKey": "utm_content",
+      "jotformQuestionName": "utm_content",
+      "jotformQuestionLabel": "UTM Content",
+      "outputKey": "utm_content",
+      "type": "utm",
+      "value": "hero-form",
+      "required": false,
+      "purpose": "Creative, placement, or variant hint captured in a hidden field."
+    },
+    {
+      "sourceKey": "landing_page_url",
+      "jotformQuestionName": "landing_page_url",
+      "jotformQuestionLabel": "Landing Page URL",
+      "outputKey": "landing_page_url",
+      "type": "page",
+      "value": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+      "required": true,
+      "purpose": "Full page URL that hosted or linked to the Jotform form."
+    },
+    {
+      "sourceKey": "referrer_url",
+      "jotformQuestionName": "referrer_url",
+      "jotformQuestionLabel": "Referrer URL",
+      "outputKey": "referrer_url",
+      "type": "page",
+      "value": "https://www.google.com/",
+      "required": false,
+      "purpose": "Browser referrer captured before submission."
+    },
+    {
+      "sourceKey": "gclid",
+      "jotformQuestionName": "gclid",
+      "jotformQuestionLabel": "Google Click ID",
+      "outputKey": "gclid",
+      "type": "click_id",
+      "value": "test-gclid-123",
+      "required": false,
+      "purpose": "Google Ads click ID used for downstream matching."
+    },
+    {
+      "sourceKey": "msclkid",
+      "jotformQuestionName": "msclkid",
+      "jotformQuestionLabel": "Microsoft Click ID",
+      "outputKey": "msclkid",
+      "type": "click_id",
+      "value": "test-msclkid-456",
+      "required": false,
+      "purpose": "Microsoft Ads click ID used for downstream matching."
+    },
+    {
+      "sourceKey": "fbclid",
+      "jotformQuestionName": "fbclid",
+      "jotformQuestionLabel": "Meta Click ID",
+      "outputKey": "fbclid",
+      "type": "click_id",
+      "value": "test-fbclid-789",
+      "required": false,
+      "purpose": "Meta click ID retained for source QA."
+    },
+    {
+      "sourceKey": "first_touch_summary",
+      "jotformQuestionName": "first_touch_summary",
+      "jotformQuestionLabel": "First Touch Summary",
+      "outputKey": "first_touch_summary",
+      "type": "touch",
+      "value": "google / cpc / local-seo-audit",
+      "required": false,
+      "purpose": "Original known source before later visits or form submits."
+    },
+    {
+      "sourceKey": "first_touch_url",
+      "jotformQuestionName": "first_touch_url",
+      "jotformQuestionLabel": "First Touch URL",
+      "outputKey": "first_touch_url",
+      "type": "touch",
+      "value": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit",
+      "required": false,
+      "purpose": "First known landing URL retained by the snippet or export."
+    },
+    {
+      "sourceKey": "last_touch_summary",
+      "jotformQuestionName": "last_touch_summary",
+      "jotformQuestionLabel": "Last Touch Summary",
+      "outputKey": "last_touch_summary",
+      "type": "touch",
+      "value": "google / cpc / local-seo-audit",
+      "required": false,
+      "purpose": "Latest known source at the time of submission."
+    },
+    {
+      "sourceKey": "last_touch_url",
+      "jotformQuestionName": "last_touch_url",
+      "jotformQuestionLabel": "Last Touch URL",
+      "outputKey": "last_touch_url",
+      "type": "touch",
+      "value": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+      "required": false,
+      "purpose": "Latest known page URL at the time of submission."
+    },
+    {
+      "sourceKey": "consent_status",
+      "jotformQuestionName": "consent_status",
+      "jotformQuestionLabel": "Consent Status",
+      "outputKey": "consent_status",
+      "type": "consent",
+      "value": "granted",
+      "required": true,
+      "purpose": "Consent or privacy acknowledgement status copied into the QA output."
+    },
+    {
+      "sourceKey": "consent_source",
+      "jotformQuestionName": "consent_source",
+      "jotformQuestionLabel": "Consent Source",
+      "outputKey": "consent_source",
+      "type": "consent",
+      "value": "Jotform checkbox: I agree to be contacted about my audit request.",
+      "required": false,
+      "purpose": "Where the consent status came from, such as checkbox text or form note."
+    },
+    {
+      "sourceKey": "source_context",
+      "jotformQuestionName": "source_context",
+      "jotformQuestionLabel": "Source Context",
+      "outputKey": "source_context",
+      "type": "context",
+      "value": "Jotform \"Local SEO Audit Request\" (241234567890123) submitted from exampleagency.test with google / cpc / local-seo-audit",
+      "required": true,
+      "purpose": "Plain-English context for the source, page, and form."
+    },
+    {
+      "sourceKey": "human_summary",
+      "jotformQuestionName": "human_summary",
+      "jotformQuestionLabel": "Human Summary",
+      "outputKey": "human_summary",
+      "type": "review",
+      "value": "Sam Taylor submitted Local SEO Audit Request via google / cpc / local-seo-audit; gclid, msclkid, fbclid; consent granted.",
+      "required": true,
+      "purpose": "Readable attribution summary for agency/client QA."
+    },
+    {
+      "sourceKey": "qa_status",
+      "jotformQuestionName": "qa_status",
+      "jotformQuestionLabel": "QA Status",
+      "outputKey": "qa_status",
+      "type": "review",
+      "value": "manual_review_required",
+      "required": true,
+      "purpose": "Local readiness status before relying on the form attribution path."
+    }
+  ],
+  "fieldValues": {
+    "form_title": "Local SEO Audit Request",
+    "submission_id": "6019347710012345678",
+    "lead_name": "Sam Taylor",
+    "email": "sam.taylor@example.com",
+    "phone": "+61 8 5550 0100",
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "local-seo-audit",
+    "utm_term": "near-me-checker",
+    "utm_content": "hero-form",
+    "landing_page_url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+    "referrer_url": "https://www.google.com/",
+    "gclid": "test-gclid-123",
+    "msclkid": "test-msclkid-456",
+    "fbclid": "test-fbclid-789",
+    "first_touch_summary": "google / cpc / local-seo-audit",
+    "first_touch_url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit",
+    "last_touch_summary": "google / cpc / local-seo-audit",
+    "last_touch_url": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789",
+    "consent_status": "granted",
+    "consent_source": "Jotform checkbox: I agree to be contacted about my audit request.",
+    "source_context": "Jotform \"Local SEO Audit Request\" (241234567890123) submitted from exampleagency.test with google / cpc / local-seo-audit",
+    "human_summary": "Sam Taylor submitted Local SEO Audit Request via google / cpc / local-seo-audit; gclid, msclkid, fbclid; consent granted.",
+    "qa_status": "manual_review_required"
+  },
+  "missingRequired": [],
+  "qaChecklist": [
+    {
+      "check": "Jotform hidden-field UTMs",
+      "status": "pass",
+      "detail": "google / cpc / local-seo-audit"
+    },
+    {
+      "check": "Click IDs",
+      "status": "pass",
+      "detail": "At least one paid-click ID was captured."
+    },
+    {
+      "check": "Landing page",
+      "status": "pass",
+      "detail": "https://exampleagency.test/local-seo-audit?utm_source=google&utm_medium=cpc&utm_campaign=local-seo-audit&utm_term=near-me-checker&utm_content=hero-form&gclid=test-gclid-123&msclkid=test-msclkid-456&fbclid=test-fbclid-789"
+    },
+    {
+      "check": "First and last touch",
+      "status": "pass",
+      "detail": "google / cpc / local-seo-audit -> google / cpc / local-seo-audit"
+    },
+    {
+      "check": "Consent context",
+      "status": "pass",
+      "detail": "granted: Jotform checkbox: I agree to be contacted about my audit request."
+    },
+    {
+      "check": "Human QA",
+      "status": "review",
+      "detail": "Manual review is required before relying on this in reports or CRM workflows."
+    }
+  ],
+  "reviewSteps": [
+    "Confirm Jotform hidden fields exist with the names in config/field-map.json.",
+    "Submit a test lead from the final embedded landing page, not only the Jotform builder preview.",
+    "Compare exported Jotform answers against this normalized output before using the data in CRM reports."
+  ]
+}
